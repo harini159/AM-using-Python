@@ -80,11 +80,11 @@ Program:
 ```
  import numpy as np
    import matplotlib.pyplot as plt
-   Am=2.18
-   fm=274
-   fs=27400
-   Ac=3.14
-   fc=2740
+   Am=2.19
+   fm=284
+   fs=28400
+   Ac=3.19
+   fc=2840
    t=np.arange(0,2/fm,1/fs)
    m=Am*np.cos(2*3.14*fm*t)
    plt.subplot(3,1,1)
@@ -119,6 +119,7 @@ MODEL GRAPH:
 RESULT:
 
 Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
+
 
 
 
