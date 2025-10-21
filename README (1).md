@@ -5,76 +5,39 @@ EXP NO: 5 GENERATION AND DETECTION OF AM
 
 AIM:
 
-To generate and detect the amplitude modulation and demodulation u s i n g COLAB and to calculate modulation index of AM.
+To implement and analyze amplitude modulation (AM) using Python's NumPy and Matplotlib libraries.
 
-EQUIPMENTS REQUIRED
+Apparatus Required:
 
-• Computer with i3 Processor
-
-• Goolge COLAB
+1. Software: Python with NumPy and Matplotlib libraries 
+2. Hardware: Personal Computer 
 
 THEORY:
 
-Modulation can be defined as the process by which the characteristics of carrier wave are varied in accordance with the modulating wave (signal). Modulation is performed in a transmitter by a circuit called a modulator. 
-Need for modulation is as follows: 
-• Avoid mixing of signals 
-• Reduction in antenna height 
-• long distance communication 
-• Multiplexing 
-• Improve the quality of reception 
-• Ease of radiation. 
-Amplitude Modulation is the process of changing the amplitude of a relatively high frequency carrier signal in proportion with the instantaneous value of the modulating signal. The output waveform contains all the frequencies that make up the AM signal and is used to transport the information through the system. Therefore the shape of the modulated wave is called the AM envelope. With no modulating signal the output waveform is simply the carrier signal. Coefficient of modulation is a term used to describe the amount of amplitude change present in an AM waveform. There are three degrees of modulation available based on value of modulation index.
-1)Under modulation : m<1, Em < Ec
-2)Critical modulation: m-1, Em = Ec
-3)Over modulation: m>1, Em > Ec
-
+Amplitude Modulation (AM) is a technique used in electronic communication, primarily for transmitting information via a radio carrier wave. In AM, the amplitude of the carrier wave is varied in proportion to that of the message signal. The general form of an AM signal is:
+                    s(t)=[Ac​+Am​cos(2πfm​t)]cos(2πfc​t)
+                    where:
+                    Ac is the amplitude of the carrier signal.
+                    Am is the amplitude of the message signal.
+                    fc is the frequency of the carrier signal.
+                    fm is the frequency of the message signal.
+                    t is time.
 
 Note: Keep all the switch faults in off position.
 
 Algorithm:
 
-1.Define Parameters set the following parameters:
-• Amplitude of message signal → Am
-• Frequency of message signal → fm
-• Sampling frequency → fs
-• Amplitude of carrier signal → Ac
-• Frequency of carrier signal → fc
-
-2.Create Time Vector
-Generate the time vector t for 2 cycles of the message signal:
-   t = np.arange(0, 2/fm, 1/fs)
-
- 3.Create Modulating Signal
-   Define the message signal (modulating signal):
-   m = Am * cos(2 * π * fm * t)
-   
- 4.Plot Modulating Signal
-   Plot m in the first subplot using plt.subplot(3,1,1)
-   
- 5.Create Carrier Signal
-   Define the carrier signal:
-   c = Ac * cos(2 * π * fc * t)
-   
- 6.Plot Carrier Signal
-   Plot c in the second subplot using plt.subplot(3,1,2)
-   
- 7.Perform Amplitude Modulation
-   Generate the AM signal:
-   Eam = (Ac + Am * cos(2 * π * fm * t)) * cos(2 * π * fc * t)
-     
- 8.Plot AM Signal
-   Plot Eam in the third subplot using plt.subplot(3,1,3)
-
- 9.Compare Signals
- Compare the original modulating signal with the demodulated signal. PROCEDURE
- •	Refer Algorithms and write code for the experiment.
- •	Open SCILAB in System
- •	Type your code in New Editor
- •	Save the file
- •	Execute the code
- •	If any Error, correct it in code and execute again
- •	Verify the generated waveform using Tabulation and Model Waveform
-  
+1.Set Up the Python Environment: Ensure that Python is installed on your system. You can use 
+Anaconda for managing Python packages and environments, or any other Python IDE of your 
+choice. 
+2. Import Necessary Libraries: Import the math library in Python. 
+3. Initialize Parameters: Set the values for carrier frequency, message frequency, and sampling 
+frequency. 
+4. Generate Time Axis: Create a time vector for the signal duration. 
+5. Generate Message Signal: Define the message signal as a cosine/sin wave. 
+6. Generate Carrier Signal: Define the carrier signal as a cosine/sin wave. 
+7. Modulate Signal: Apply the AM formula to obtain the modulated signal. 
+8. Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
  
 Program:
 ```
@@ -98,27 +61,28 @@ Program:
    plt.tight_layout()
    plt.show()
 ```
+MODEL GRAPH:
+
+<img width="691" height="538" alt="image" src="https://github.com/user-attachments/assets/7e275ca3-650b-4ccf-96dc-2c95fa3d0ff9" />
 
 Output Waveform:
+
+<img width="768" height="582" alt="Screenshot 2025-09-17 085949" src="https://github.com/user-attachments/assets/c065f8d0-956d-41ad-ac6f-d1d300eab6f9" />
 
 
 TABULATION:
 
+![am py](https://github.com/user-attachments/assets/0b0aebaa-5335-438d-966c-df2bb145eb01)
+
 
 Calculation:
-   1. ma (Theory) = am/ac =
-   2. ma(Practical) = (Emax-Emin)/(Emax+Emin) = 
-
-MODEL GRAPH:
-
-<img width="772" height="587" alt="image" src="https://github.com/user-attachments/assets/f1c518fc-2026-407d-830a-c86f894c9973" />
-
-
-
+   1. ma (Theory) = am/ac = 0.68
+   2. ma(Practical) = (Emax-Emin)/(Emax+Emin) = 10.4
 
 RESULT:
 
 Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
+
 
 
 
