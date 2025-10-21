@@ -1,7 +1,7 @@
 
 # AM using Python
 
-EXP NO: 5 GENERATION AND DETECTION OF AM
+EXP NO: 5 Amplitude Modulation and Demodulation using NumPy and Matplotlib
 
 AIM:
 
@@ -67,12 +67,13 @@ MODEL GRAPH:
 
 Output Waveform:
 
-<img width="768" height="582" alt="Screenshot 2025-09-17 085949" src="https://github.com/user-attachments/assets/c065f8d0-956d-41ad-ac6f-d1d300eab6f9" />
+<img width="772" height="587" alt="Screenshot 2025-10-19 140406" src="https://github.com/user-attachments/assets/b8c67085-64a5-48ed-b31a-47aadfd43971" />
+
 
 
 TABULATION:
 
-![am py](https://github.com/user-attachments/assets/0b0aebaa-5335-438d-966c-df2bb145eb01)
+![WhatsApp Image 2025-10-21 at 8 42 47 PM](https://github.com/user-attachments/assets/790ec749-78f8-466c-92ca-b6a26df9cbf2)
 
 
 Calculation:
@@ -81,7 +82,8 @@ Calculation:
 
 RESULT:
 
-Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
+The message signal, carrier signal, and amplitude modulated (AM) signal will be displayed in separate plots. Thus, AM is implemented using numPy and Matplotlib. 
+
 
 
 
